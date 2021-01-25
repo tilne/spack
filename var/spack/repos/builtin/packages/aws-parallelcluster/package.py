@@ -56,7 +56,7 @@ class AwsParallelcluster(PythonPackage):
     depends_on('py-setuptools', when='@2.6:', type=('build', 'run'))
     depends_on('py-enum34@1.1.6:', when='@2.6: ^python@:3.3', type=('build', 'run'))
     depends_on('py-enum34@1.1.6:', when='@:2.5', type=('build', 'run'))
-    depends_on('py-pyyaml@5.1.2', when='@2.6: ^python@:2,3.5:', type=('build', 'run'))
+    depends_on('py-pyyaml@5.1.2', when='@2.6:2.8 ^python@:2,3.5:', type=('build', 'run'))
     depends_on('py-pyyaml@5.1.2:', when='@:2.5', type=('build', 'run'))
 
     # https://github.com/aws/aws-parallelcluster/pull/1633
